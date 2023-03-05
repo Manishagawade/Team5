@@ -1,0 +1,69 @@
+Immutability: Once we create String object we can not perform any changes into that existing object .
+If we are trying to perform any changes in existing object then with that changes a new object will be created.
+This non changable behaviour is nothing but immutability.
+
+Note : Bydefault String class is immutable.
+
+Example 1:
+
+package immutability;
+
+public class ImmutableDemo {
+
+	public static void main(String[] args) {
+
+		String s = "Santosh";
+		    s.concat("Bikkad");
+		       System.out.println(s);
+	}
+}
+
+
+Example 2:
+
+
+package immutability;
+
+public class ImmutableDemo {
+
+	public static void main(String[] args) {
+
+		String s=new String("Santosh");
+		     s.concat("Bikkad");
+		     System.out.println(s);
+	}
+}
+
+
+Mutability:Once we create object of StringBuffer  class then we can perform any changes into that existing object.
+This changable behaviour is nothing but mutability.
+
+Note : StringBuffer and StringBuilder class are mutable bydeafult.
+
+
+Example :
+
+package mutability;
+
+public class MutabilityDemo {
+
+	public static void main(String[] args) {
+		
+		StringBuffer sb=new StringBuffer("Santosh");
+		System.out.println(sb);
+		       sb.append("Bikkad");
+		       System.out.println(sb);
+		
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
